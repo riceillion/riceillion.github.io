@@ -1,9 +1,3 @@
-/* =====================================================================
-   ONLINE  —  talks to the Supabase database set up in supabase/schema.sql.
-   Everything here quietly does nothing if js/config.js is blank or the
-   database can't be reached, so the game never breaks because of it.
-   ===================================================================== */
-
 const ONLINE = (() => {
   const cfg = window.RICEILLION_CONFIG || {};
   const url = (cfg.supabaseUrl || "").trim().replace(/\/+$/, "");
